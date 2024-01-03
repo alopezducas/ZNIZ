@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    border-style: hidden;
+    width: 0;
+}
+
+button i{
+    font-size: 18px;
+    position: absolute;
+    bottom: 581px;
+    right: 240px;
+}
+
+button i:hover{
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: #00a5d9;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0px 20px 0px;
+}
+
+header img{
+    width: 300px;
+    padding: 10px;
+    display: block;
+}
+
+header{
+    background-color: #b2def9;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+
+header input{
+    border-style: hidden;
+    height: 25px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+footer{
+    background-color: #b2def9;
+    padding: 40px;
+}
+
+footer a:hover{
+    color: #00a5d9;
+    font-weight: bolder;
+}
+
+h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+h4{
+    font-size: 25px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.menu{
+    background-color: black;
+    padding: 5px;        
+}
+
+.menu a:hover{
+    border-bottom: 5px solid #b2def9;
+}
+
+
+.menu a{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0px 300px;
+}
+
+section .slider{
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+
+.slider .titulo{
+    position: absolute;
+    top: 240px;
+    left: 90px;
+}
+
+.slider h2{
+    font-size: 100px;
+}
+
+.slider h3{
+    font-size: 80px;
+}
+
+.slider .dato{
+    display: block;
+    position: absolute;
+    top: 460px;
+    left: 95px;
+}
+
+.slider p{
+    text-align: left;
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    padding: 5px 20px;
+    margin-bottom: 15px;
+}
+
+.slider a{
+    max-width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.slider a:hover{
+    background-color: #b2def9;
+    color: #000;
+    font-weight: bold;
+}
+
+.slider img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.virales{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.especial {
+    display: block;
+    font-weight: bolder;
+    background-color: black;
+    text-align: center;
+    color: #b2def9;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 20px;
+
+}
+
+.virales img{
+    max-width: 100%;
+    border-radius: 50%;
+    background-color: #b2def9;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    margin: 15px 80px;
+}
+
+.virales a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #00a5d9;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 0px 80px 20px 80px;
+}
+
+.virales enfermedades{
+    margin:10px;
+}
+
+.partes a:hover{
+    background-color: #b2def9;
+    transform: scale(1);
+}
+
+.telefono{
+    background-color: #00a5d9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.telefono h4{
+    font-size: 120px;
+}
+
+.telefono h6{
+    font-size: 88px;
+    font-weight: bold;
+}
+
+.telefono p{
+   font-size: 30px
+}
+
+.telefono i{
+    font-size: 100px;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center 
+}
+
+.contenedor img{
+    width: 30px;
+    padding: 10px 20px
+}
+
+.contenedor ul{
+    list-style: none;
+}
+
+.contenedor a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.buscador{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.buscador input{
+    width:600px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+
+.desc{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 15px 0px;
+
+}
+
+.desc h2{
+    padding-left: 40px;
+}
+
+.desc p {
+    margin-left: 10px;
+    padding: 10px 30px;
+}
+
+.enfermedades{
+    margin: 0px 150px;
+    
+}
+
+.desc img{
+    margin: 0px 0px 30px 0px;
+    max-width: 100%;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+.desc a{
+    text-decoration: none;
+    color: #00a5d9;
+}
+
+.desc a:hover{
+    color: #000;
+    transition: 1s;
+}
+
+.mapa iframe{
+    max-width: 100%;
+    margin: 0px 10px 20px 10px;
+}
+
+.mapa div{
+    text-align: center;
+}
+
+.mapa p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.datos h2{
+    padding-bottom: 10px;
+}
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 100px;
+}
+
+.contacto input{
+    width:370px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    
+}
+
+.contacto textarea{
+    font-family: roboto;
+    padding: 10px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);   
+}
+
+.contacto .boton{
+    font-weight: bolder;
+    color: white;
+    background-color: #00a5d9;
+    padding: 2px;
+    width: 80px;
+    border-style: none;
+    border-radius: 20px;   
+}
+
+.contacto .mapa{
+    max-width: 100%;
+}
+
+.datos{
+    margin: 20px 20px;
+}
+
+.contacto img{
+    width: 25px;
+    padding: 10px;
+}
+
+.covid2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0px 150px 0px 150px;
+}
+
+.covid2 img{
+    margin: 0px 0px 30px 0px;
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+.covid2 .covidf{
+    padding: 50px;
+}
+
+.covidcont{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-content: center;
+    margin: 0px 150px;
+}
+
+.covidcont p{
+    margin-right: 50px;
+}
+
+.covidcont img{
+    width: 200px;
+    margin: 10px;
+}
+
+.covidcont .sintomas{
+    text-align: center;
+}
+
+.form{
+    padding: 0px 10px;
+    max-width: 100%;
+}
+
+.covidcont .nombre input{
+    width: 500px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+.covidcont .dni input{
+    width: 250px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+
+.covidcont .tel input{
+    margin-left: 15px;
+    width: 220px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+.covidcont .tel label{
+    margin-left: 15px;
+}
+
+.covidcont #dir input{
+    width: 500px;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+.covidcont .sexo input{
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+.covidcont .int input{
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+.covidcont #pais select{
+    width: 250px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+    box-shadow: 7px 7px 6px -3px rgba(191,191,191,1);
+}
+
+.covidcont .boton{
+    font-weight: bolder;
+    color: white;
+    background-color: #00a5d9;
+    padding: 2px;
+    width: 80px;
+    border-style: none;
+    border-radius: 20px;   
+}
+
+.covidcont .juntos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+}
+
+.quehacer{
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+}
+.quehacer img{
+    margin: 10px 40px;
+    width: 200px;
+}
+
+.mapacovid iframe{
+    max-width: 100%;
+}
+
+iframe{
+    margin: 0px 10px 30px;
+}
+
+
+.arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    background-image: url(../img/arriba.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index:100;
+    transition: 1s;
+}
+
+.arriba:hover{
+    opacity: 0.8;
+}
+
+.Error{
+    color: red;
+}
+
+@media screen and (max-width:60em){ 
+    .menu ul { 
+        padding:0; 
+        display: block; 
+        text-align: center;
+    } 
+    
+    .menu li {
+        padding: 0.2em;
+    }
+    
+    .slider{ 
+        position: relative; 
+    }
+    
+    .slider img{
+        width: 40em;
+        margin-bottom: 0;
+    }
+    
+    .slider .titulo { 
+        top: 16px; 
+        left: 16px; 
+    } 
+    
+    .slider h2 { 
+        font-size: 2.0em; 
+    } 
+    
+    .slider h3 { 
+        font-size: 1.5em; 
+        margin-top: -0.3em; 
+    }
+    
+    .slider .dato {
+        top: 80px; 
+        left: 18px; 
+        font-size: 1em;
+    }
+    
+    .slider .dato p { 
+        display: none; 
+    }
+    
+    .especial{
+        font-size: 0.9em;
+        margin: 0.8em;
+    }
+    
+    .virales{
+        margin-bottom: 1em;
+    }
+    
+    .virales img{
+        width: 10em;
+        height: 10em;
+    }
+    
+    .virales a{
+        font-size: 0.7em;
+        margin: 0 8em;
+    }
+    
+    .telefono{
+        padding: 2em 0;
+    }
+    
+    .telefono p{
+        font-size: 1em;
+    }
+    
+    .telefono h6{
+        font-size: 3em;
+    }
+    
+    .telefono h4{
+        font-size: 5em;
+    }
+    
+    .telefono i{
+        font-size: 0.8em;
+    }
+    
+    .contenedor .datos_grupo{
+        padding-bottom: 1em;
+    }
+    
+    .contenedor .menu_footer{
+        padding-bottom: 1em;
+    }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 | ZNIZ</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/funcionalidadcovid.js"></script>
+    
+</head>
+<body>
+   
+   <header id="Arriba"> 
+   
+   <a title="Logo" href="index.html"><img src="img/zniz.png" alt="Logo"></a>
+       
+        <label for="buscador"></label>
+        <input type="text" name="buscador" placeholder="Filtro por enfermedad" list="buscarenf">
+        <datalist id="buscarenf">
+                 <option><a href="covid-19.html">COVID-19</a></option>
+                 <option>Fiebre del Zika</option>
+                 <option>Fiebres Hemorrágicas</option>
+                 <option>Gripe</option>
+                 <option>VIH / Sida</option>
+        </datalist>
+   
+   </header>
+   
+   <main>
+      
+      <section>
+       <nav class="menu">
+       <ul> 
+            <li><a href="index.html"> MENÚ </a></li>
+           <li><a href="enfermedades.html"> ENFERMEDADES </a></li>
+           <li><a href="https://www.argentina.gob.ar/salud/vacunas" target="_blank"> VACUNAS </a></li>
+           <li><a href="hospitales.html"> HOSPITALES </a></li>
+           <li><a href="contacto.html"> CONTACTO </a></li>
+       </ul>
+   </nav>
+      
+       </section>
+       
+               <h1>COVID-19</h1>
+               
+            <section>
+           <article class="covid2">
+               <img src="img/covid-19.jpg" alt="covid-19">
+               
+               <p class="covidf">La COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente. Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019. Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.     <br> <br>
+               Una persona puede contraer la COVID‑19 por contacto con otra que esté infectada por el virus. La enfermedad se propaga principalmente de persona a persona a través de las gotículas que salen despedidas de la nariz o la boca de una persona infectada al toser, estornudar o hablar. </p>
+               
+           </article>
+       </section>
+       
+       <section class="covidcont">
+          
+          <article>
+             
+             <p>¡Hola usuario! Si tienes síntomas de COVID-19 o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas. Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso. <br> 
+             El uso de este servicio supone la aceptación de los términos y la política de privacidad descritos en 'Ver las condiciones y políticas'</p>
+             
+             <h4>SÍNTOMAS</h4>
+             
+             <div class="sintomas">
+                
+                 <img src="img/tos.png" alt="Tos">
+                 <img src="img/garganta.png" alt="Garganta"> <br>
+                 <img src="img/respirar.png" alt="Respirar">
+                 
+             </div>
+              
+          </article>
+           
+           <article class="form">
+              
+        <form action="#" onsubmit="return validar()" name="form">
+            
+            <div class="nombre">
+                <label for="nombre"> Nombre y Apellido/s <br> </label>
+                <input type="text" name="nombre" id="nombre"> <br> <br>
+            </div>
+        
+                <div class="juntos">
+       
+            <div class="dni">
+                 <label for="dni"> DNI <br> </label>
+                <input type="text" name="dni" id="dni">
+            </div>
+       
+            <div class="tel">
+                <label for="telefono"> Teléfono <br> </label>
+                <input type="tel" name="telefono" id="telefono"> <br> <br>
+            </div>
+       
+                </div>
+       
+            <div class="sexo">
+                 <label for="sexo">Sexo</label> <br>
+                M <input type="radio" id="masculino" name="sexo" value="masculino"> </p>
+                F <input type="radio" id="femenino" name="sexo" value="femenino"> </p> <br>
+            </div>
+      
+       <div class="int">
+       <label for="interior">¿Has viajado al exterior de la República Argentina?</label> 
+       Si <input type="radio" id="si" name="interior" value="si" onchange="mostrarOcultar()">
+       No <input type="radio" id="no" name="interior" value="no" onchange="mostrarOcultar()"> <br><br>
+       </div>
+       
+       <div id="pais" class="oculto">
+
+       <label for="paises">Países visitados</label>
+       <select name="paises" id="paises">
+
+            <option value="seleccione" selected>Seleccione</option>
+            <option value="usa">Estados Unidos</option>
+            <option value="inglaterra">Inglaterra</option>
+            <option value="españa">España</option>
+            <option value="francia">Francia</option>
+            <option value="italia">Italia</option>
+            
+       </select> <br><br>
+
+       </div>
+       
+       <div class="preg">
+       
+       <label for="fiebre">¿Tuviste fiebre mayor a 38 grados?</label>
+       Si <input type="radio" id="si" name="fiebre" value="si">
+       No <input type="radio" id="no" name="fiebre" value="no"> <br><br>
+       
+       <label for="dolor">¿Tuviste dolor de cabeza?</label>
+       Si <input type="radio" id="si" name="dolor" value="si">
+       No <input type="radio" id="no" name="dolor" value="no"> <br><br>
+       
+       <label for="tos">¿Tuviste una tos persistente?</label>
+       Si <input type="radio" id="si" name="tos" value="si">
+       No <input type="radio" id="no" name="tos" value="no"> <br><br>
+       
+       <label for="garganta">¿Tuviste dolor de garganta?</label>
+       Si <input type="radio" id="si" name="garganta" value="si">
+       No <input type="radio" id="no" name="garganta" value="no"> <br><br>
+       
+       <label for="respirar">¿Tuviste dificultad para respirar?</label>
+       Si <input type="radio" id="si" name="respirar" value="si" onclick="mostrarOcultar2()">
+       No <input type="radio" id="no" name="respirar" value="no" onclick="mostrarOcultar2()"> <br><br>
+       
+       </div>
+
+       <div id="dir" class="oculto">
+        <label for="direccion"> Dirección <br> </label>
+        <input type="text" name="direccion" id="direccion">
+    </div>
+       
+       <div class="boton">
+       <input class="boton" type="submit" value="ENVIAR">
+       </div>
+       <br>
+       <div id="mensaje" class="Error">
+
+       </div>
+       
+   </form>
+               
+           </article>
+           
+       </section>
+       
+       <section class="quehacer">
+           <img src="img/14-lavarse-manos.png" alt="lavarse">
+           <img src="img/15-estornudar.png" alt="estornudar">
+           <img src="img/16-tocar-nariz.png" alt="nariz">
+           <img src="img/17-ventilar.png" alt="ventilar">
+           <img src="img/18-limpiar-objetos.png" alt="objetos">
+           <img src="img/19-permanecer-domicilio.png" alt="domicilio">
+           <img src="img/20-reducir-contacto.png" alt="contacto">
+           <img src="img/21-no-compartir-mate.png" alt="mate">
+       </section>
+       
+       
+       <section class="mapacovid">
+           <h4>HOSPITALES MÁS CERCANOS ESPECIALIZADOS EN LA ENFERMEDAD</h4>
+           <iframe src="https://www.google.com/maps/d/embed?mid=1KP7j60i3j_wLXS3p0In9mYrkuAs" width="1320px" height="500px;"></iframe>
+       </section>
+       
+       <a href="#Arriba" class="arriba"> </a>
+   </main>
+   
+   
+   <footer>
+      <div class="contenedor">
+      <article>
+          <h5>Datos del grupo:</h5>
+       <p>Abril Rocio Lopez Ducas - 42.076.888</p>
+       <p>Franco Reynoso - 39.413.913</p>
+       </article>
+       
+       <article>
+        <ul> 
+            <li><a href="index.html"> MENÚ </a></li>
+           <li><a href="enfermedades.html"> ENFERMEDADES </a></li>
+           <li><a href="https://www.argentina.gob.ar/salud/vacunas" target="_blank"> VACUNAS </a></li>
+           <li><a href="hospitales.html"> HOSPITALES </a></li>
+           <li><a href="contacto.html"> CONTACTO </a></li>
+       </ul>
+       </article>
+       
+       <article class="redes">
+           <h5>Redes sociales</h5>
+           <a title="Facebook" href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook" > </a>
+           <a title="Twitter" href="http://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"> </a>
+           <a title="Instagram" href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"> </a>
+       </article>
+       </div>
+   </footer>
+    
+</body>
+</html>
